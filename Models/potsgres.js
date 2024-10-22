@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 //prod
 const pool = new Pool({
   user: 'voxcity',
-  host: '186.237.57.35',
+  host: 'localhost',
   database: 'vox',
   password: 'iZFTzPJFsY6D',
   port: 5432,
