@@ -7,9 +7,13 @@ var cors = require('cors');
 const HelperApp = require("./Models/Helper/HelperApp");
 
 var usersRouter = require('./routes/users');
+const corsOptions = {
+    origin: 'http://localhost:3000', 
+  };
+  
 
 var app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(logger("dev"));
 app.use(cookieParser());
 app.use(bodyParser.json({ limit: "50mb" }));
