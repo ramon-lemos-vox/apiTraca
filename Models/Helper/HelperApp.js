@@ -1,6 +1,6 @@
 
 // const { ObjectId } = require("mongodb");
-const { connectDB, runQuery, disconnectD, addUser, getAllUsers } = require('../potsgres');
+const { connectDB, runQuery, disconnectD, addUser, getAllUsers } = require('../postgresProvider');
 
 
 // ------------------------------------------------------------------------------------------------------------
