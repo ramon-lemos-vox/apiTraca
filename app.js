@@ -8,10 +8,11 @@ const HelperApp = require("./Models/Helper/HelperApp");
 
 var usersRouter = require('./routes/users');
 const corsOptions = {
-    origin: 'http://localhost:3000', 
+    origin: ['https://traca.voxcity.com.br'], // Permite apenas solicitações dessa origem
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+    optionsSuccessStatus: 200,
+    credentials: true
   };
-  
-
 var app = express();
 app.use(cors(corsOptions));
 app.use(logger("dev"));
