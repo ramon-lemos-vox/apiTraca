@@ -5,11 +5,12 @@ const db = require('../Models/postgresProvider')
 // ------------------------------------------------------------------
 
 router.get('/', (req, res) => {
-  db.getAllUsers().then((users) => {
-    res.send(users);
-  }).catch((err) =>
-    res.send(err)
-  );
+  // db.getAllUsers().then((users) => {
+  //   res.send(users);
+  // }).catch((err) =>
+  //   res.send(err)
+  // );
+  res.send("Hello World");
 });
 
 
